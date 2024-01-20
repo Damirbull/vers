@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Nunito+Sans:opsz,wght@6..12,600&family=Roboto:wght@400;500;700&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+body {
+background: #F6F7F8;
+
+font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.container {
+    max-width: 1609px;
+    padding: 0 150px;
+    margin: 0 auto;
+}
+/* Header */
+
+.header {
+position: fixed;
+top: 0;
+width: 100%;
+padding-top: 47px;
+height: 100px;
+background-color: transparent;    
+transition: background-color 0.3s;
+z-index: 1000;
+        }
+
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 145px;
+}
+
+/* NAV*/
+    .nav-not {
+        display: inline-block; /* Делаем элемент блочным, чтобы применить margin и padding */
+        transition: transform 0.3s; /* Плавное изменение положения в течение 0.3 секунды */
+    }
+
+    .nav-not:hover {
+        transform: translateY(-5px); /* Поднимаем элемент на 5 пикселей вверх при наведении */
+    }
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+     margin-right: 40px;
+}
+.nav-iteam {
+    
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none; /* Убираем подчеркивание от ссылок */
+    transition: color 0.3s; /* Плавное изменение цвета в течение 0.3 секунды */
+}
+.nav-link:hover {
+        color: #ff0000; /* Цвет текста при наведении мышью */
+    }
+.nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 13px;
+    
+}
+.language {
+    font-size: 14px; /* Размер шрифта только для "RU" */
+}
+.nav-btn {
+    width: 117px;
+    height: 35px;
+    background-color: #2D77E8; /* Замените 'blue' на нужный вам синий цвет */
+    color: white; /* Белый цвет текста */
+    border-radius: 5px; /* Мягкие углы */
+    padding: 8px 16px; /* Паддинг (8px сверху и снизу, 16px слева и справа) */
+    text-decoration: none; /* Убираем стандартное подчеркивание для ссылки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px; /* Расстояние между содержимым и границами кнопки */
+    transition: transform 0.3s, background-color 0.3s; /* Плавные изменения положения и цвета фона */
+    font-size: 14px; /* Замените 14px на желаемый размер текста */
+}
+
+.nav-btn:hover {
+    transform: translateY(-5px); /* Поднимаем кнопку на 5 пикселей вверх при наведении */
+    background-color: #1A5BBF; /* Изменяем цвет фона при наведении */
+}
+/*Шапка  */
+.main-content {
+    padding: 0 150px;
+    margin: 200px auto -70px;
+}
+.logo-text {
+font-family: Nunito;
+font-size: 40px;
+font-weight: 700;
+line-height: 67px;
+letter-spacing: -0.05em;
+text-align: left;
+
+}
+.background-image {
+    position: relative;
+    margin-top: -268px;
+    margin-left: 110px;
+    z-index: -1;
+}
+.blue-text {
+    color: #2D77E8;
+}
+.search-form {
+    position: relative;
+    top: -320px;
+    background: transparent;
+    padding: 20px; /* Добавляем отступы внутри формы */
+    border-radius: 10px; /* Создаем мягкие углы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем тень для подчеркивания формы */
+    max-width: 660px;
+}
+.search-form input {
+    background-color: #FFFFFF; /* Белый фон для каждого input */
+    border-radius: 5px; /* Создаем мягкие углы для input */
+    padding: 10px; /* Добавляем отступы внутри input */
+    margin-bottom: 10px; /* Добавляем отступ между input */
+    width: 100%; /* Занимает 100% ширины контейнера */
+    box-sizing: border-box; /* Учитываем padding внутри input при установке ширины */
+    max-width: 160px;
+    margin-right: 10px
+}
+.search-form input#location {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iNCIgeT0iNS4wNzEiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgcng9IjIuOCIgc3Ryb2tlPSIjMkQ3N0U4IiBzdHJva2Utd2lkdGg9IjEuNSIvPjxwYXRoIGQ9Ik04LjU3MSA2LjIxNFYzLjkzbTYuODU4IDIuMjg0VjMuOTNtNCAxNC4yODRoLTkuMTQzQTYuMjg2IDYuMjg2IDAgMDE0IDExLjkzdjBNOCAxMGguNW0zLjUgMGguNW0zLjUgMGguNU04IDE0aC41bTMuNSAwaC41bTMuNSAwaC41IiBzdHJva2U9IiMyRDc3RTgiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4='); /* Вставьте ваш код SVG в формате base64 здесь */
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+body button {
+    font-size: 14px;
+    background-color: #EF4800;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    
+}
+
+.damir {
+    max-width: 1209px;
+    margin: 0 auto;
+    column-gap: 20px;
+    display: flex;
+    
+}
+
+.body-nav {
+    background: rgb(255, 247, 171);
+    width: 278.25px;
+    height: 387px;
+    border-radius: 27px;
+
+}
+.image-container{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.body-nav span:first-of-type {
+    margin-left: 20px;
+    font-family: Nunito;
+font-size: 24px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+    .body-text {
+        margin-left: 20px; /* Apply margin to the rest of the text */
+    }
+.reviews{
+    max-width: 1209px;
+    margin: 100px auto;
+}
+.image-reviews{
+    position: relative;
+    z-index: -1;
+}
+.text-rew{
+    left: 50px;
+    position: absolute;
+    top: 50px;
+font-family: Nunito;
+font-size: 40px;
+font-weight: 700;
+line-height: 39px;
+letter-spacing: -0.05em;
+text-align: left;
+
+}
+.text-rew span {
+    color: #2D77E8; /* Set the color for the specific span */
+}
+
+.text-rewo {
+    color: #5E6272;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.text-dop {
+    position: absolute;
+    width: 121px;
+    height: 43px;
+    top: 261px;
+    left: 47px;
+    padding: 10px 18px;
+    background: #2D77E8; /* Background color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Border radius for rounded corners */
+    gap: 10px;
+}
+.text-apartments {
+    font-family: Nunito;
+font-size: 40px;
+font-weight: 700;
+line-height: 55px;
+letter-spacing: -0.05em;
+text-align: left;
+
+        max-width: 750px;
+    margin: 100px auto;
+}
+
+.text-apartments span{
+    color: #2D77E8;
+}
+.tabs-wrap {
+    max-width: 650px;
+    margin: -90px auto;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* Add overflow property to contain background within borders */
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+.tab:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.tab:hover {
+    background-color: #cbd2dc; /* Change the background color to your preference */
+    color: #fff; /* Change the text color on hover */
+}
+
+.tab._active {
+    background-color: #89C1F0; /* Change the background color for the active tab */
+    color: #fff; /* Change the text color for the active tab */
+}
+
+
+.card {
+    max-width: 1209px;
+    margin: 110px auto;
+    display: flex;
+    column-gap: 20px;
+}
+
+.card-content {
+    
+    width: 282px;
+    height: 432px;
+    border-radius: 27px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle lift effect */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+}
+.cart-text {
+    margin-right: 70px;
+    font-family: Nunito Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.cart-text span {
+    font-family: Nunito Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: #8291A7;
+
+}
+.card-imgg {
+    margin-top: 15px;
+    
+}
+ .barely-visible-line {
+            border: 0;
+            height: 1px;
+            background-color: #ccc; /* Adjust the color to your preference */
+            margin: 10px 0; /* Adjust the margin as needed */
+             width: 230px;
+        }
+.cart-text h1{
+font-family: Nunito Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+    
+    
+}
+.arrow-container {
+            position: relative;
+            width: 15px;
+            height: 10px;
+            column-gap: 15px;
+            display: flex;
+            align-items: baseline;
+}
+
+
+
+/ * для анимациц/ 
+.myElement {
+  width: 282px;
+  height: 331px;
+  top: 119px;
+  left: 2px;
+  border-radius: 0px 0px 27px 27px;
+  /* Дополнительные стили, если необходимо */
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  /* Другие свойства стиля по вашему выбору */
+}
+
+.cooperation {
+        max-width: 1209px;
+    margin: 0 auto;
+}
+
+.cooperation-textt {
+    margin-top: -12px;
+}
+.cooperation-text {
+    
+    font-family: Nunito;
+font-size: 40px;
+font-weight: 700;
+line-height: 55px;
+letter-spacing: -0.05em;
+text-align: center;
+
+}
+
+.cooperation-text span {
+    font-family: Nunito Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+color: #5E6272;
+}
+
+.cooperation-text h1{
+    margin-top: -12px;
+    font-family: Nunito Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+color: #5E6272;
+}
+.custom {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 20px;
+}
+.custom-box {
+      width: 378px;
+      height: 449px;
+      top: 2405px;
+      left: 391px;
+      border-radius: 27px;
+      background-color: #BAD0FF; /* Цвет фона (можете заменить на свой) */
+    }
+.custom-box2 {
+      width: 378px;
+      height: 449px;
+      top: 2405px;
+      left: 391px;
+      border-radius: 27px;
+      background-color:#FFBCD4; /* Цвет фона (можете заменить на свой) */
+    }
+.custom-box3 {
+      width: 378px;
+      height: 449px;
+      top: 2405px;
+      left: 391px;
+      border-radius: 27px;
+      background-color: #FFF2AB; /* Цвет фона (можете заменить на свой) */
+    }
+.custom-text {
+ 
+    margin-top: 70px;
+    font-family: Nunito;
+font-size: 24px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.custom-text h1 {
+    margin-top: 10px;
+    font-family: Nunito Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.custom-text h2 {font-family: Nunito Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+}
+.custom-text h3 {font-family: Nunito Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: center;
+}
+.custom-img {
+position: relative
+    margin-top: -10px;
+    margin-left: 70px;
+    z-index: -1;
+}
+.custom-button {
+          position: absolute;
+      width: 174px;
+      height: 43px;
+      padding: 10px 20px; /* Поправил формат padding */
+      border-radius: 9px;
+      background-color: #FFFFFF; /* Цвет фона (можете изменить на нужный) */
+    color: #5E6272;
+    margin-top: 15px;
+    margin-left: 100px;
+    font-family: Nunito Sans;
+font-size: 13px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.custom-buttonn {
+          position: absolute;
+      width: 174px;
+      height: 43px;
+      padding: 10px 20px; /* Поправил формат padding */
+      border-radius: 9px;
+      background-color: #FFFFFF; /* Цвет фона (можете изменить на нужный) */
+    color: #5E6272;
+    margin-top: -55px;
+    margin-left: 120px;
+    font-family: Nunito Sans;
+font-size: 13px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.part-img {
+    max-width: 1209px;
+    margin: 90px auto;
+}
+
+.bus {
+    
+    max-width: 1209px;
+    margin: 0 auto;
+  width: 1200px;
+  height: 365px;
+  border-radius: 27px;
+  border: 2px; 
+  background-color: #D0FFD1; /* Замените на ваш цвет фона */
+}
+
+.bus-body {
+    padding-top: 60px;
+    margin-left: 70px;
+}
+.bus-body span{
+    font-family: Nunito;
+font-size: 40px;
+font-weight: 700;
+line-height: 42px;
+letter-spacing: -0.05em;
+text-align: left;
+
+}
+.bus-body h1 {
+    margin-top: 15px;
+    font-family: Nunito Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: left;
+color: #5E6272;
+}
+.bus-button {
+              position: absolute;
+      width: 130px;
+      height: 43px;
+      padding: 10px 30px; /* Поправил формат padding */
+      border-radius: 9px;
+      background-color: #FFFFFF; /* Цвет фона (можете изменить на нужный) */
+    color: #5E6272;
+    margin-top: 40px;
+    margin-left: 70px;
+    font-family: Nunito Sans;
+font-size: 13px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+}
+.bus-img {
+    margin-left: 860px;
+    margin-top: -160px;
+}
+.foote{
+    height: 100px;
+   background: #FFFFFF;
+margin-top: 50px;
+}
+.footer-body {
+
+    max-width: 1209px;
+    margin: 0 auto;
+    display: flex;
+}
+.a {
+    margin-top: 30px;
+}
